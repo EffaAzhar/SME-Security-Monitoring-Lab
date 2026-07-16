@@ -1,0 +1,41 @@
+# macOS
+.DS_Store
+
+# Windows
+Thumbs.db
+
+# UTM virtual machines
+*.utm
+*.qcow2
+*.vhd
+*.vhdx
+*.iso
+
+# Raw packet captures
+captures/raw/
+
+# Secrets
+*.pem
+*.key
+*.pfx
+*.env
+secrets/
+
+# SSH keys
+id_rsa
+id_rsa.pub
+authorized_keys
+
+# Logs that may contain sensitive data
+*.evtx
+*.pcapng
+
+# Python
+__pycache__/
+*.pyc
+
+# VS Code
+.vscode/
+
+# JetBrains IDEs
+.idea/
