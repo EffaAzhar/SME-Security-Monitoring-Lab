@@ -26,18 +26,18 @@ The Windows workstation network configuration was verified using following comma
 ```powershell
 ipconfig
 ```
-**Screenshot**
+**Figure 3.1  Windows IP Configuration**
 
-`../screenshots/windows-ipconfig.png`
+![Windows IP Configuration](../screenshots/01-windows-ipconfig.png)
 
 
 ### Ubuntu Desktop
 
 The `ip addr` command was used to identify the assigned network interface and IP address and `ip route` confirmed the routing configuration and default gateway.
 
-**Screenshot**
+**Figure 3.2  Ubuntu Desktop Network Configuration**
 
-`../screenshots/ubuntu-desktop-network.png`
+![Ubuntu Desktop Network Configuration](../screenshots/02-ubuntu-desktop-network.png)
 
 ### Ubuntu Server
 The Ubuntu Server network configuration was verified using following comands and it also confirmed that the server received the expected IP address and was correctly configured to communicate with the other virtual machines through the shared virtual network.
@@ -45,9 +45,10 @@ The Ubuntu Server network configuration was verified using following comands and
 ip addr
 ip route
 ```
-**Screenshot**
+**Figure 3.3  Ubuntu Server Network Configuration**
 
-`../screenshots/ubuntu-server-network.png`
+![Ubuntu Server Network Configuration](../screenshots/03-ubuntu-server-network.png)
+
 
 ## Connectivity Testing
 
@@ -60,7 +61,16 @@ After verifying the network configuration, connectivity between the virtual mach
 | Ubuntu Server | Ubuntu Desktop | Successful |
 
 All tests completed successfully with **0% packet loss** confirming reliable communication across the virtual network. Successful ICMP communication provides confidence that later authentication events, PowerShell activity and packet captures are generated within a correctly functioning environment.
+**Figure 3.4 Windows Workstation Pinging Ubuntu Desktop**
 
+![Windows Workstation Pinging Ubuntu Desktop](../screenshots/04-windows-ping-ubuntu-desktop.png)
+**Figure 3.5  Ubuntu Desktop Pinging Ubuntu Server**
+
+![Ubuntu Desktop Pinging Ubuntu Server](../screenshots/05-ubuntu-desktop-ping-server.png)
+
+**Figure 3.6  Ubuntu Server Pinging Ubuntu Desktop**
+
+![Ubuntu Server Pinging Ubuntu Desktop](../screenshots/06-ubuntu-server-ping-desktop.png)
 ## SSH Connectivity Verification
 
 The Secure Shell (SSH) service on the Ubuntu Server was tested from the Windows workstation. The connection successfully reached the SSH service and the server presented its host identification key. During the first connection attempt, the SSH host key fingerprint was accepted and stored within the client's `known_hosts` file.
@@ -69,6 +79,9 @@ Authentication was subsequently denied with the following message:
 ```text
 Permission denied (publickey)
 ```
+**Figure 3.7 SSH Authentication Attempt from Windows Workstation**
+
+![SSH Authentication Attempt](../screenshots/07-windows-ssh-publickey-denied.png)
 
 This behaviour was expected because the Ubuntu Server had previously been configured to allow **public key authentication only** during the Ubuntu Server Administration project. The unsuccessful login therefore demonstrated that:
 
