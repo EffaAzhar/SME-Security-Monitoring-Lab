@@ -93,9 +93,14 @@ The environment was now capable of centralised monitoring across both Windows an
 
 # Screenshots
 Screenshots for this chapter.
-
-
-
+![Windows Connectivity Test](../screenshots/01-windows-connectivity-test.png)
+**Figure 4.1:** Connectivity verification between the Windows 11 endpoint and the Wazuh server prior to agent deployment.
+![Windows Agent Installation](../screenshots/09-windows-agent-installed.png)
+**Figure 4.2:** Successful installation and activation of the Wazuh agent on the Windows 11 endpoint.
+![Ubuntu Agent Running](../screenshots/10-ubuntu-agent-running.png)
+**Figure 4.3:** Wazuh agent successfully installed and running on the Ubuntu Desktop endpoint.
+![Active Agents Dashboard](../screenshots/12-active-agents-dashboard.png)
+**Figure 4.4:** Wazuh Dashboard confirming successful registration of both Windows and Ubuntu endpoints. Both agents are reporting an Active status and forwarding telemetry to the central monitoring server
 # Key Findings
 - Successfully deployed Wazuh agents on Windows 11 and Ubuntu Desktop.
 - Verified secure communication between both endpoints and the Wazuh Manager.
