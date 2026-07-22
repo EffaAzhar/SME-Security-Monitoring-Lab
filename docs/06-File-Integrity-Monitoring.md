@@ -80,7 +80,7 @@ Wazuh successfully detected each file operation and generated security events in
 - Integrity checksum changed
 - File deleted
 
-![File Integrity Alerts](../screenshots/15-fim-alerts.png)
+![File Integrity Alerts](../screenshots/15-fim-alerts-2.png)
 ## Results
 
 The practical exercise confirmed that:
