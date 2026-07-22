@@ -41,8 +41,7 @@ Together these components provide log collection, event analysis, indexing and w
 # Initial Deployment
 
 The official Wazuh installation assistant was used to deploy the complete SIEM platform. After installation, each service was verified to ensure the deployment completed successfully. Wazuh manager, wazuh indexer, wazuh dashboard and filebeat are operational. Successful verification confirmed that the monitoring platform was ready for further configuration.
-screenshots/01-wazuh-dashboard-ready.png
-# Infrastructure Challenges
+![Figure 3.1 – Wazuh services](../screenshots/01-wazuh-services-running.png)
 
 Although the installation completed successfully, several infrastructure issues were encountered during deployment.
 
