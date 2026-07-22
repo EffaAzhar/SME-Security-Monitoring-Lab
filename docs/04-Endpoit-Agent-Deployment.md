@@ -25,14 +25,18 @@ The following tests were performed:
 - ICMP connectivity (Ping)
 - TCP Port 1515 (Agent Registration)
 - TCP Port 1514 (Agent Communication)
-
+![Windows Connectivity Test](../screenshots/01-windows-connectivity-test.png)
+**Figure 4.1:** Connectivity verification between the Windows 11 endpoint and the Wazuh server prior to agent deployment.
+![Ubuntu Connectivity Test](../screenshots/11-ubuntu-connectivity-test.png)
+**Figure 4.2:** Verification of network connectivity between the Ubuntu Desktop endpoint and the Wazuh server.
 # Windows Agent Deployment
 The Windows endpoint was registered using the Wazuh Dashboard deployment wizard. During deployment, the following configuration was specified:
 - Wazuh Manager Address
 - Agent Name
 - Windows Operating System
 After installation, the Wazuh Agent service was started successfully and automatically established communication with the Wazuh Manager. The successful deployment enabled Windows security telemetry to be forwarded to the SIEM platform for analysis.
-
+![Windows Agent Installation](../screenshots/09-windows-agent-installed.png)
+**Figure 4.3:** Successful installation and activation of the Wazuh agent on the Windows 11 endpoint.
 # Ubuntu Agent Deployment
 The Ubuntu Desktop endpoint was configured using the Linux deployment package provided by the Wazuh Dashboard. The deployment process included:
 - downloading the appropriate Wazuh agent package
@@ -41,13 +45,13 @@ The Ubuntu Desktop endpoint was configured using the Linux deployment package pr
 - assigning the endpoint name
 - enabling the Wazuh Agent service
 After installation, the agent service was verified to ensure it was running correctly and communicating with the monitoring server.
-
+![Ubuntu Agent Running](../screenshots/10-ubuntu-agent-running.png)
+**Figure 4.4:** Wazuh agent successfully installed and running on the Ubuntu Desktop endpoint.
 
 # Agent Registration
 
 Once both deployments completed successfully, the Wazuh Dashboard automatically registered the endpoints.
 The dashboard confirmed:
-
 - Windows endpoint connected
 - Ubuntu endpoint connected
 - Both agents reporting as **Active**
@@ -55,7 +59,8 @@ The dashboard confirmed:
 - Agent versions successfully synchronised with the server
 
 This confirmed that the SME monitoring environment was fully operational and capable of collecting telemetry from multiple operating systems.
-
+![Active Agents Dashboard](../screenshots/12-active-agents-dashboard.png)
+**Figure 4.5:** Wazuh Dashboard confirming successful registration of both Windows and Ubuntu endpoints. Both agents are reporting an Active status and forwarding telemetry to the central monitoring server
 
 # Endpoint Communication Flow
 
@@ -84,23 +89,6 @@ This confirmed that the SME monitoring environment was fully operational and cap
 
 
 
-# Verification
-The environment was now capable of centralised monitoring across both Windows and Linux endpoints. Successful deployment was confirmed by:
-- Active agent status
-- Successful communication over the virtual network
-- Endpoint operating systems detected automatically
-- Security telemetry successfully forwarded to the Wazuh server
-
-# Screenshots
-Screenshots for this chapter.
-![Windows Connectivity Test](../screenshots/01-windows-connectivity-test.png)
-**Figure 4.1:** Connectivity verification between the Windows 11 endpoint and the Wazuh server prior to agent deployment.
-![Windows Agent Installation](../screenshots/09-windows-agent-installed.png)
-**Figure 4.2:** Successful installation and activation of the Wazuh agent on the Windows 11 endpoint.
-![Ubuntu Agent Running](../screenshots/10-ubuntu-agent-running.png)
-**Figure 4.3:** Wazuh agent successfully installed and running on the Ubuntu Desktop endpoint.
-![Active Agents Dashboard](../screenshots/12-active-agents-dashboard.png)
-**Figure 4.4:** Wazuh Dashboard confirming successful registration of both Windows and Ubuntu endpoints. Both agents are reporting an Active status and forwarding telemetry to the central monitoring server
 # Key Findings
 - Successfully deployed Wazuh agents on Windows 11 and Ubuntu Desktop.
 - Verified secure communication between both endpoints and the Wazuh Manager.
