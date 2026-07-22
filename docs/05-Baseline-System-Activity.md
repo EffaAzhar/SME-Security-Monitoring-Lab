@@ -34,7 +34,9 @@ Both Windows and Ubuntu endpoints were actively connected to the Wazuh Manager t
 - PAM login sessions
 - Windows service events
 - Operating system informational logs
+  
 ![Baseline System Activity](../screenshots/13-baseline-system-activity.png)
+
 This behaviour demonstrates an important concept in Security Information and Event Management (SIEM) not every system action is considered a security event. Instead, Wazuh prioritises meaningful operating system events while additional monitoring modules can be enabled to provide deeper visibility.
 
 ## Results
