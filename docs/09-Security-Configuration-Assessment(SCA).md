@@ -119,7 +119,7 @@ When combined with the behavioural monitoring techniques implemented in previous
 
 The Security Configuration Assessment dashboard summarising the Windows endpoint compliance score against the CIS Microsoft Windows 11 Enterprise Benchmark v3.0.0.
 
-![SCA Dashboard](../images/ch09/23-sca-overview.png)
+![SCA Dashboard](../screenshots/23-sca-overview.png)
 
 
 
@@ -127,7 +127,7 @@ The Security Configuration Assessment dashboard summarising the Windows endpoint
 
 Example of a failed CIS control identifying that the password history policy does not meet the recommended security baseline. Wazuh provides the rationale, remediation guidance and compliance mappings for the failed control.
 
-![Password History Policy Failed](../images/ch09/24-password-history-failed.png)
+![Password History Policy Failed](../screenshots/24-password-history-failed.png)
 
 
 
@@ -135,7 +135,7 @@ Example of a failed CIS control identifying that the password history policy doe
 
 Example of a failed CIS control identifying that the built-in Administrator account has not been renamed. Wazuh explains the associated security risk and provides remediation guidance.
 
-![Administrator Account Failed](../images/ch09/25-administrator-account-failed.png)
+![Administrator Account Failed](../screenshots/25-administrator-account-failed.png)
 
 
 
@@ -143,4 +143,4 @@ Example of a failed CIS control identifying that the built-in Administrator acco
 
 Example of a successfully configured CIS security control showing that local accounts with blank passwords are restricted from remote logon. Wazuh verifies the configuration and maps it to multiple compliance frameworks.
 
-![Passed Security Control](../images/ch09/26-blank-password-policy-passed.png)
+![Passed Security Control](../screenshots/26-blank-password-policy-passed.png)
