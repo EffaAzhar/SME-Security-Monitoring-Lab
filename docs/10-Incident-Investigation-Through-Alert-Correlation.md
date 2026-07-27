@@ -1,4 +1,4 @@
-# Chapter 10 – Incident Investigation Through Alert Correlation
+# Chapter 10 : Incident Investigation Through Alert Correlation
 
 ## Research Question
 
